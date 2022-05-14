@@ -1,0 +1,98 @@
+.right-sidebar {
+    width: 100%;
+    margin-left: 2rem;
+}
+
+.right-sidebar-header {
+    display: flex;
+    background-color: var(--v-dk-blue);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    align-items: center;
+}
+
+.right-sidebar-header h1 {
+    margin: 0 2rem 0 1rem;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.right-sidebar-header a {
+    text-decoration: none;
+    margin-left: auto;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.6rem;
+    background-color: var(--purple);
+    color: white;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+
+.right-sidebar-header p {
+    color: white;
+}
+
+.right-sidebar-header span {
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.right-sidebar-header span::after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    top: 0;
+    right: 0rem;
+    background-image: url('../../images/shared/icon-arrow-down.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translate(110%, 25%);
+}
+
+.sort {
+    position: relative;
+}
+
+.sort-box {
+    position: absolute;
+    top: 130%;
+    left: 2.8rem;
+    width: 10rem;
+    overflow: hidden;
+    max-height: 0rem;
+    transition: all .3s;
+}
+
+.sort-items {
+    padding: 0.5rem 1rem;
+    z-index: 2;
+    max-height: 0rem;
+    background-color: var(--dk-blue);
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.sort-items p {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .right-sidebar {
+        margin: 0;
+    }
+    .right-sidebar-header {
+        border-radius: 0;
+        padding: 1rem;
+    }
+    .right-sidebar-header h1,
+    .right-sidebar-header img {
+        display: none;
+    }
+    .right-sidebar-header a {
+        font-size: 0.8rem;
+    }
+}

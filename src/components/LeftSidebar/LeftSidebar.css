@@ -1,0 +1,223 @@
+.left-sidebar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.banner {
+    width: 20rem;
+    padding: 2rem;
+    height: 12rem;
+    background: url('../../images/suggestions/desktop/background-header.png');
+    border-radius: 1rem;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+
+.banner p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.category {
+    width: 20rem;
+    background-color: white;
+    margin: 1.5rem 0;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category button {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--lt-grey);
+    border: none;
+    outline: none;
+    border-radius: 0.8rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    color: var(--sea-blue);
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.category button:hover {
+    background-color: var(--sea-blue);
+    color: white;
+}
+
+.roadmap {
+    width: 20rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.roadmap-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    align-items: center;
+}
+
+.roadmap-header a {
+    color: var(--sea-blue);
+    font-weight: 700;
+}
+
+.roadmap-header h2 {
+    font-size: 1.35rem;
+}
+
+.roadmap-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.roadmap-item {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.roadmap-item .circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.roadmap-item h3 {
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 1.25rem;
+    opacity: 0.8;
+}
+
+.hamburger {
+    display: none;
+}
+
+.roadmap-item p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: 0.85;
+    text-transform: capitalize;
+}
+
+.circle-1 {
+    background-color: var(--orange);
+}
+
+.circle-2 {
+    background-color: var(--purple);
+}
+
+.circle-3 {
+    background-color: var(--sky-blue);
+}
+
+.show {
+    transform: translateX(0) !important;
+}
+
+@media screen and (max-width: 1000px) {
+    .left-sidebar {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    }
+    .banner,
+    .roadmap,
+    .category {
+        width: 18rem;
+        height: 19rem;
+        margin: 0;
+    }
+    .category {
+        margin: 0 1rem;
+    }
+    .roadmap-item p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .left-sidebar {
+        margin-bottom: 0;
+    }
+    .banner {
+        width: 100%;
+        border-radius: 0;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+    .banner h1 {
+        font-size: 1.25rem;
+    }
+    .banner p {
+        font-size: 1rem;
+    }
+    .category,
+    .roadmap {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 0;
+        margin: 0;
+        z-index: 100;
+        transform: translateX(200%);
+        transition: all .3s;
+    }
+    .category {
+        top: 100%;
+    }
+    .category-temp {
+        position: absolute;
+        top: 0;
+        left: -3.6rem;
+        width: 120%;
+        height: 100%;
+        background-color: var(--grey);
+        z-index: -1;
+    }
+    .roadmap-temp {
+        position: absolute;
+        top: 0;
+        left: -3.6rem;
+        width: 120%;
+        height: 100%;
+        background-color: var(--lt-grey);
+        z-index: -1;
+    }
+    .roadmap {
+        top: 26.5rem;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        width: 1.5rem;
+        top: 50%;
+        right: 0;
+        transform: translate(-100%, -50%);
+        cursor: pointer;
+    }
+}

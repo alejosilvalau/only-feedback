@@ -1,0 +1,117 @@
+.all-comments {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.comments,
+.replies {
+    margin-top: 2.5rem;
+    display: flex;
+    position: relative;
+}
+
+.comments img,
+.all-replies img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.user-comment-container,
+.user-reply-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-comment-container h2,
+.all-replies h2 {
+    font-size: 1.3rem;
+}
+
+.user-comment-container .username,
+.all-replies .username {
+    margin: 0.5rem 0;
+    opacity: 0.7;
+}
+
+.user-comment,
+.user-reply {
+    max-width: 40rem;
+    font-size: 1.2rem;
+    opacity: 0.85;
+}
+
+.reply-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    color: blue;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.reply-btn:hover {
+    text-decoration: underline;
+}
+
+.add-comment {
+    padding: 2rem;
+    background-color: white;
+    margin-top: 2.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-comment h1 {
+    font-size: 1.35rem;
+}
+
+.add-comment textarea {
+    margin: 1.5rem 0;
+}
+
+.add-comment button {
+    float: right;
+    padding: 0.85rem 1.5rem;
+    border-radius: 0.85rem;
+    border: none;
+    outline: none;
+    background-color: var(--purple);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.add-comment button:hover {
+    filter: brightness(120%);
+}
+
+@media screen and (max-width: 750px) {
+    .user-comment-container h2,
+    .all-replies h2 {
+        font-size: 1.1rem;
+    }
+    .user-comment,
+    .user-reply {
+        font-size: 1rem;
+        float: left;
+    }
+    .comments img,
+    .all-replies img {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1rem;
+    }
+    .user-comment,
+    .user-reply {
+        position: relative;
+        left: -3.5rem;
+    }
+}

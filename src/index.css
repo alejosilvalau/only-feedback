@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --purple: #ad1fea;
+    --sea-blue: #4661e6;
+    --v-dk-blue: #373f68;
+    --white: #ffffff;
+    --lt-grey: #f2f4ff;
+    --v-lt-grey: #f7f8fd;
+    --dk-blue: #3a4374;
+    --grey: #647196;
+    --orange: #f49f85;
+    --sky-blue: #62bcfa;
+    --red: #d73737;
+    --font-family: 'Jost', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-size: 16px;
+}
+
+button {
+    font-family: var(--font-family);
+}

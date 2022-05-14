@@ -1,0 +1,10 @@
+.all-replies {
+    margin-top: 1.5rem;
+    width: 95%;
+    margin-left: auto;
+}
+
+.user-reply span {
+    color: var(--purple);
+    font-weight: 900;
+}

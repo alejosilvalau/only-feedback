@@ -1,0 +1,120 @@
+.feedback {
+    margin: 2.5rem 0;
+    display: flex;
+    align-items: center;
+    padding: 2rem 3rem;
+    background-color: white;
+    border-radius: 0.8rem;
+}
+
+.feedback button p {
+    pointer-events: none;
+}
+
+.feedback button {
+    padding: 0.7rem;
+    border: none;
+    outline: none;
+    background-color: rgba(156, 156, 156, 0.3);
+    border-radius: 0.75rem;
+    font-weight: 600;
+    margin-right: 3rem;
+    cursor: pointer;
+}
+
+.arrow-up {
+    font-size: 1.5rem;
+    color: #4661E6;
+    font-weight: 700;
+    pointer-events: none;
+}
+
+.feedback-details a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.feedback-details p {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.feedback-details h3 {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--lt-grey);
+    border-radius: 0.8rem;
+    margin-top: 1rem;
+    color: var(--sea-blue);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.comment {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.comment img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.active,
+.active .arrow-up {
+    background-color: var(--sea-blue) !important;
+    color: white;
+}
+
+.filter:hover {
+    filter: brightness(20%);
+}
+
+a:active {
+    color: blue;
+}
+
+@media screen and (max-width: 1000px) {
+    .feedback-details a {
+        font-size: 1.5rem;
+    }
+    .feedback-details p {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .feedback-details {
+        order: -1;
+    }
+    .feedback-details a {
+        font-size: 1.25rem;
+    }
+    .feedback-details p {
+        font-size: 1rem;
+    }
+    .feedback {
+        padding: 2rem 1.5rem;
+        margin: 2rem 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+    .comment {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(-50%, -100%);
+    }
+    .feedback button {
+        margin-right: 0;
+        padding: 0.8rem 1.25rem;
+        margin-top: 2rem;
+        display: flex;
+    }
+}

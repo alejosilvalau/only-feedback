@@ -1,0 +1,45 @@
+.new-reply {
+    padding: 2rem 0 0;
+    width: 90%;
+    margin-left: auto;
+}
+
+.new-reply form {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.new-reply form button {
+    padding: 0.75rem 1.5rem;
+    margin-left: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--purple);
+    color: white;
+    font-weight: 700;
+    border-radius: 0.7rem;
+}
+
+.new-reply form button:hover {
+    filter: brightness(120%);
+}
+
+.new-reply form textarea {
+    width: 75%;
+}
+
+@media screen and (max-width: 750px) {
+    .new-reply form button {
+        font-size: 0.85rem;
+        width: 8rem;
+    }
+    .new-reply form textarea {
+        font-size: 1rem;
+    }
+    .new-reply {
+        width: 100%;
+    }
+}
